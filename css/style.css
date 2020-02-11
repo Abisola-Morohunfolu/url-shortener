@@ -1,0 +1,29 @@
+:root {
+	--color-primary: hsl(180, 66%, 49%);
+	--color-primary-dark: Dark Violet;
+
+	--color-secondary-red: hsl(0, 87%, 67%);
+
+	--color-gray: hsl(0, 0%, 75%);
+	--color-gray-violet: hsl(257, 7%, 63%);
+	--color-blue-dark: hsl(255, 11%, 22%);
+	--color-violet-dark: hsl(260, 8%, 14%);
+}
+
+*,
+*::before,
+*::after {
+	margin: 0;
+	padding: 0;
+	box-sizing: inherit;
+}
+
+body {
+	box-sizing: border-box;
+	font-family: 'Poppins', sans-serif;
+	font-size: 1.8rem;
+}
+
+html {
+	font-size: 62.5%;
+}
