@@ -22,21 +22,30 @@
     <div class="nav-brand">
       <img src="./images/logo.svg" alt="Shortly" class="nav__logo">
     </div>
-    <ul class="nav__list">
-      <li class="nav__items"><a href="#" class="nav__links">Features</a></li>
-      <li class="nav__items"><a href="#" class="nav__links">Pricing</a></li>
-      <li class="nav__items"><a href="#" class="nav__links">Resources</a></li>
-      <li class="nav__items"><a href="#" class="nav__links">Login</a></li>
-      <li class="nav__items"><a href="#" class="nav__links">Sign Up</a></li>
-    </ul>
+    <div class="nav__container">
+      <div class="nav__list-left">
+        <ul class="nav__list">
+          <li class="nav__item"><a href="#" class="nav__link">Features</a></li>
+          <li class="nav__item"><a href="#" class="nav__link">Pricing</a></li>
+          <li class="nav__item"><a href="#" class="nav__link">Resources</a></li>
+        </ul>
+      </div>
+
+      <div class="nav__list-right">
+        <ul class="nav__list">
+          <li class="nav__item"><a href="#" class="nav__link">Login</a></li>
+          <button class="btn btn-round">Sign Up</button>
+        </ul>
+      </div>
+    </div>
   </nav>
 
-  <header class="header">
+  <header class="header mb-bg">
     <div class="header__text">
-      <h1 class="heading-1">
+      <h1 class="heading-1 mb-sm">
         More than just shorter links
       </h1>
-      <p class="paragraph">
+      <p class="header__text-paragraph mb-md">
         Build your brand’s recognition and get detailed insights 
         on how your links are performing.
       </p>
@@ -57,55 +66,62 @@
 
     <section class="section-stats">
       <h2 class="heading-2">Advanced Statistics</h3>
-      <p class="paragraph">Track how your links are performing across the web with our 
+      <p class="paragraph main-pg">Track how your links are performing across the web with our 
         advanced statistics dashboard.</p>
         <div class="stat__box-container">
           <div class="stat__box">
             <img src="./images/icon-brand-recognition.svg" alt="Brand Recognition" class="stat__box-icon">
-            <h3 class="heading-3">
-              Brand Recognition
-            </h3>
-            <p class="paragraph">  Boost your brand recognition with each click. Generic links don’t 
-              mean a thing. Branded links help instil confidence in your content.</p>
+            <div class="stat__box-details">
+              <h3 class="heading-3 mb-sm">
+                Brand Recognition
+              </h3>
+              <p class="paragraph">  Boost your brand recognition with each click. Generic links don’t 
+                mean a thing. Branded links help instil confidence in your content.</p>
+            </div>
           </div>
 
           <div class="stat__box">
             <img src="./images/icon-detailed-records.svg" alt="Brand Recognition" class="stat__box-icon">
-            <h3 class="heading-3">
-              Detailed Records
-            </h3>
-            <p class="paragraph">Gain insights into who is clicking your links. Knowing when and where 
-              people engage with your content helps inform better decisions.</p>
+            <div class="stat__box-details">
+              <h3 class="heading-3 mb-sm">
+                Detailed Records
+              </h3>
+              <p class="paragraph">Gain insights into who is clicking your links. Knowing when and where 
+                people engage with your content helps inform better decisions.</p>
+            </div>
           </div>
+
+          <div class="stat__box">
+            <img src="./images/icon-detailed-records.svg" alt="Brand Recognition" class="stat__box-icon">
+            <div class="stat__box-details">
+              <h3 class="heading-3 mb-sm">
+                Fully Customizable
+              </h3>
+              <p class="paragraph">Improve brand awareness and content discoverability through customizable 
+                links, supercharging audience engagement.</p>
+            </div>
+            </div>
         </div>
 
-          <div class="stat__box">
-            <img src="./images/icon-detailed-records.svg" alt="Brand Recognition" class="stat__box-icon">
-            <h3 class="heading-3">
-              Fully Customizable
-            </h3>
-            <p class="paragraph">Improve brand awareness and content discoverability through customizable 
-              links, supercharging audience engagement.</p>
-          </div>
         </div>
     </section>
 
     <section class="section-boost">
-      <h2 class="heading-2 heading-2--light">
+      <h2 class="heading-2 heading-2--light mb-sm">
         Boost your links today
       </h2>
-      <button class="btn-round">Get Started</button>
+      <button class="btn btn-round">Get Started</button>
     </section>
     </main>
 
     <footer class="footer">
       <div class="footer-brand">
-        <img src="./images/" alt="" class="footer-logo">
+        <img src="./images/logo.svg" alt="" class="footer-logo">
       </div>
 
       <div class="footer__nav">
         <div class="footer__nav-box">
-          <h4 class="heading-4">Features</h4>
+          <h4 class="heading-4 mb-sm">Features</h4>
           <ul class="footer__nav-list">
             <li class="footer__nav-items"><a href="#" class="footer__nav-links">Link Shortening</a></li>
             <li class="footer__nav-items"><a href="#" class="footer__nav-links">Branded Links</a></li>
@@ -114,7 +130,7 @@
         </div>
         
         <div class="footer__nav-box">
-          <h4 class="heading-4">Resources</h4>
+          <h4 class="heading-4 mb-sm">Resources</h4>
           <ul class="footer__nav-list">
             <li class="footer__nav-items"><a href="#" class="footer__nav-links">Blog</a></li>
             <li class="footer__nav-items"><a href="#" class="footer__nav-links">Developers</a></li>
@@ -123,7 +139,7 @@
         </div>
 
         <div class="footer__nav-box">
-          <h4 class="heading-4">Company</h4>
+          <h4 class="heading-4 mb-sm">Company</h4>
           <ul class="footer__nav-list">
             <li class="footer__nav-items"><a href="#" class="footer__nav-links">About</a></li>
             <li class="footer__nav-items"><a href="#" class="footer__nav-links">Our Team</a></li>
@@ -133,10 +149,18 @@
         </div>
       </div>
       
-        <div class="attribution">
+      
+      <div class="footer-icons">
+        <img src="./images/icon-facebook.svg" alt="Facebook Icon" class="footer-icon">
+        <img src="./images/icon-twitter.svg" alt="Twitter Icon" class="footer-icon">
+        <img src="./images/icon-pinterest.svg" alt="Pinterest Icon" class="footer-icon">
+        <img src="./images/icon-instagram.svg" alt="Instagram Icon" class="footer-icon">
+      </div>
+      
+      <div class="attribution">
           Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
           <code>Coded by <a href="#">Abisola Morohunfolu</a>.</code> 
-        </div>
+      </div>
     </footer>
 
   <script src="./js/script.js"></script>
