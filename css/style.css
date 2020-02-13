@@ -167,7 +167,11 @@ html {
 }
 
 .header__img-box {
-	transform: translateX(20%);
+	width: 100%;
+}
+
+.header__img {
+	transform: translateX(15%);
 }
 
 /* SHORTEN SECTION STYLES */
@@ -337,7 +341,7 @@ main {
 	}
 
 	.header__img-box {
-		width: 60vw;
+		width: 70%;
 	}
 
 	.header__text-paragraph {
@@ -347,7 +351,15 @@ main {
 
 @media only screen and (max-width: 64em) {
 	.heading-1 {
-		font-size: 3.5rem;
+		font-size: 4.5rem;
+	}
+
+	.header__img-box {
+		width: 60%;
+	}
+
+	.header__img {
+		transform: translateX(0);
 	}
 }
 
@@ -356,8 +368,16 @@ main {
 		font-size: 56.25%;
 	}
 
-	.header__img-box {
+	.header__text {
 		width: 50vw;
+	}
+
+	.header__img {
+		max-width: 100%;
+	}
+
+	.header__text-paragraph {
+		width: 80%;
 	}
 
 	.footer__nav-box {
@@ -383,11 +403,13 @@ main {
 	.nav__container {
 		opacity: 0;
 		visibility: hidden;
+		display: none;
 	}
 
 	/* TYPOGRAPHY STYLES */
 	.heading-1 {
-		font-size: 6rem;
+		font-size: 5rem;
+		width: 80%;
 	}
 
 	.heading-2 {
@@ -414,15 +436,17 @@ main {
 	.header {
 		flex-direction: column-reverse;
 		text-align: center;
-		padding: 0 4rem;
+		padding: 0;
 		padding-right: 0;
+		overflow: hidden;
 	}
 
 	.header__text {
 		display: flex;
 		flex-direction: column;
 		align-items: center;
-		padding: 5rem 2rem;
+		padding: 5rem 1rem;
+		width: 100%;
 	}
 
 	.header__text-paragraph {
@@ -432,7 +456,14 @@ main {
 	}
 
 	.header__img-box {
-		transform: translateY(0);
+		width: 90vw;
+	}
+
+	.header__img {
+		transform: translateX(5%);
+		display: block;
+		overflow: hidden;
+		max-width: 100%;
 	}
 
 	.shorten-input {
@@ -460,6 +491,7 @@ main {
 		background-image: url(../images/bg-shorten-mobile.svg);
 		background-position-x: 15rem;
 		background-repeat: no-repeat;
+		margin: 2rem 4rem;
 	}
 
 	.shorten-input {
@@ -488,6 +520,11 @@ main {
 
 	.stat__box:not(:last-child) {
 		margin-right: 0;
+	}
+
+	.stat__box:nth-child(2),
+	.stat__box:nth-child(3) {
+		transform: translateY(0);
 	}
 
 	.stat__box-icon {
@@ -527,5 +564,46 @@ main {
 
 	.footer-icons {
 		margin-bottom: 2rem;
+		margin-right: 0;
+	}
+
+	.footer-icon:not(:last-child) {
+		margin-right: 3rem;
+	}
+}
+
+@media only screen and (max-width: 375px) {
+	.heading-1 {
+		font-size: 4rem;
+	}
+
+	.heading-2 {
+		font-size: 3rem;
+	}
+
+	.paragraph,
+	.header__text-paragraph {
+		font-size: 1.8rem;
+	}
+
+	.stat__box-container::after {
+		width: 150%;
+		left: -25%;
+	}
+
+	.section-shorten {
+		padding: 3.5rem;
+	}
+
+	.section-stats {
+		padding: 3rem 4rem;
+	}
+
+	.section-boost {
+		padding: 6rem;
+	}
+
+	.footer {
+		padding: 4.5rem 4rem;
 	}
 }
