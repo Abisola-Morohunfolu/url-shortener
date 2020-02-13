@@ -132,7 +132,7 @@ linkBox.addEventListener('click', event => {
 
 		//selecting text inside element
 		inputEl.select();
-		inputEl.setSectionRange(0, 99999);
+		inputEl.setSelectionRange(0, 99999);
 
 		document.execCommand('copy');
 
